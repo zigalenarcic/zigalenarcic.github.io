@@ -41,8 +41,8 @@ h1 {
   padding: 30px;
 
   width: 50%;
-  max-width: fit-content;
-  min-width: 640px;
+  --max-width: fit-content;
+  min-width: fit-content;
   font-size: 16pt;
 }
 
@@ -57,6 +57,12 @@ h1 {
   max-width: fit-content;
   min-width: 640px;
   font-size: 16pt;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blue-white-gradient {
@@ -84,6 +90,22 @@ h1 {
       <p>mangl is a graphical man page viewer.</p>
       <p>Supported platforms: Linux, BSD, possibly macOS</p>
       <p><a href="https://github.com/zigalenarcic/mangl">Github repository</a></p>
+
+      <p>
+      Features:
+      <ul>
+        <li>searching of man pages</li>
+        <li>hyperlinks to other man pages</li>
+        <li>search withing a man page</li>
+        <li>browsing history</li>
+        <li>colored text</li>
+        <li>truetype support</li>
+        <li>draggable scrollbar</li>
+        <li>keyboard and mouse interaction</li>
+      </ul>
+      </p>
+
+      <img src="mangl.gif" class="center" alt="Mangl screencapture">
     </div>
 
     <div class="center-column">
@@ -105,7 +127,7 @@ h1 {
     <br />
     <br />
     <div style="text-align:center">
-    Hosted by github.
+      Hosted by github.
     </div>
   </body>
 </html>
